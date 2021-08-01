@@ -1,0 +1,68 @@
+.gap {
+  padding: 29px;
+  background: rgb(59, 59, 59);
+}
+.navBarWrap {
+  width: 85%;
+  margin: 15px auto;
+}
+.navBar {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  padding: 22px 0px;
+  float: right;
+}
+.navBar a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 450;
+  font-size: 18px;
+  transition: all 500ms;
+}
+.navBar a:hover {
+  /* color: white; */
+  text-decoration: underline;
+  /* background-image: linear-gradient(to right,#000 , #133357); */
+}
+
+@media only screen and (max-width: 1280px) {
+  .navBarWrap {
+    width: 100%;
+  }
+  .navBar {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    margin-right: 10%;
+    padding: 22px 0px;
+    float: right;
+  }
+  .navBar a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 450;
+    font-size: 15px;
+    transition: all 500ms;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navBarWrap {
+    width: 100%;
+  }
+  .navBar {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 12px 0px;
+    margin-right: 0%;
+  }
+  .navBar a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 450;
+    font-size: 12px;
+    transition: all 500ms;
+  }
+}

@@ -1,0 +1,154 @@
+/* Promo  */
+.promo {
+  height: 70vh;
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+  /* padding: 30px 120px; */
+  padding: 0px 0px 75px 7.5%;
+  color: white;
+}
+
+.promo h1 {
+  font-size: 55px;
+  font-family: "Product Sans", Roboto;
+  letter-spacing: 5px;
+  font-weight: 600;
+}
+
+.promo p {
+  font-size: 27px;
+  font-family: "Product Sans", Roboto;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+/* Qoute section */
+.qouteHeading h1 {
+  font-size: 30px;
+  color: #133357;
+  padding: 20px 0px;
+  text-align: center;
+  font-family: "Roboto slab", Roboto;
+}
+
+.qoute form {
+  width: 40%;
+  margin: auto;
+}
+
+.qoute input {
+  width: 100%;
+  outline: none;
+  padding: 10px 0px;
+  margin: 10px 0px;
+  border: 1px solid rgb(92, 92, 92, 0.5);
+  border-radius: 3px;
+}
+
+.qoute label {
+  color: rgb(92, 92, 92, 0.5);
+  font-size: 12px;
+  font-family: "Product Sans", Roboto;
+  font-weight: 800;
+}
+
+.qoute p {
+  color: rgb(165, 12, 12);
+  font-size: 12px;
+  font-family: "Product Sans", Roboto;
+  font-weight: 800;
+  margin: 5px 0px 10px 0px;
+}
+.qouteSuccess {
+  color: rgb(92, 92, 92, 0.5) !important;
+  font-size: 12px;
+  font-family: "Product Sans", Roboto;
+  font-weight: 800;
+  margin: 5px 0px 10px 0px;
+  text-align: left;
+  padding: 10px 15px;
+  background-color: rgba(46, 156, 31, 0.3);
+  border-top: 1px solid rgb(92, 92, 92, 0.5);
+  border-left: 1px solid rgb(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgb(92, 92, 92, 0.5);
+}
+
+.qouteSubmit {
+  background-image: linear-gradient(to right, #000, #133357);
+  color: white;
+  outline: none;
+  border: none;
+  width: 30% !important;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 10px 30px;
+  border-radius: 3px;
+  margin: 10px 35%;
+  text-align: center;
+}
+
+.qouteSubmit:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 1280px) {
+  .promo {
+    height: 200px;
+    padding: 0px 0px 50px 7.5%;
+  }
+  .promo h1 {
+    font-size: 40px;
+    font-family: "Product Sans", Roboto;
+    letter-spacing: 1px;
+    font-weight: 500;
+  }
+
+  .promo p {
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  .qoute form {
+    width: 60%;
+    margin: auto;
+  }
+
+  .qouteHeading h1 {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .promo {
+    height: 200px;
+    padding: 0px 0px 30px 7.5%;
+  }
+
+  .promo h1 {
+    font-size: 20px;
+    font-family: "Product Sans", Roboto;
+    letter-spacing: 1px;
+    font-weight: 500;
+  }
+
+  .promo p {
+    font-size: 12px;
+    font-weight: 300;
+  }
+
+  .qoute form {
+    width: 80%;
+    margin: auto;
+  }
+
+  .qouteHeading h1 {
+    font-size: 20px;
+  }
+
+  .qouteSubmit {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 10px;
+  }
+}

@@ -1,0 +1,82 @@
+.weatherChannel {
+  width: 85%;
+  margin: 25px auto;
+  color: white;
+  background-color: red;
+}
+
+.weatherChannelHeading {
+  background: #133357;
+  padding: 20px;
+}
+.weatherChannelHeading h1 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.weatherChannelResults {
+  display: flex;
+  /* flex: 50%; */
+  flex-wrap: wrap;
+}
+.weatherChannelResult {
+  width: 25%;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+#Canberra {
+  background-color: #0d7e88;
+}
+#Tokyo {
+  background-color: #d09378;
+}
+#London {
+  background-color: #405b5d;
+}
+#Dubai {
+  background-color: #74a748;
+}
+
+.weatherChannelResult img {
+  width: 50px;
+  padding: 0px 0px;
+}
+
+.weatherChannelResult h1 {
+  font-size: 5em;
+  font-weight: 400;
+  padding: 0px 0px;
+}
+
+.weatherChannelResult p {
+  font-size: 20px;
+  font-weight: 400;
+  padding: 10px 0px;
+}
+
+@media only screen and (max-width: 1280px) {
+  .weatherChannelResult h1 {
+    font-size: 3em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .weatherChannelResult {
+    width: 50%;
+    padding: 10px 0px;
+  }
+  .weatherChannelResult p {
+    font-size: 15px;
+  }
+  .weatherChannelResult img {
+    width: 30px;
+    padding: 0px 0px;
+  }
+  .weatherChannelResult h1 {
+    font-size: 2em;
+  }
+  .weatherChannelHeading h1 {
+    font-size: 15px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "Product Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2)
+    format("woff2");
+}
+
+.footer {
+  display: flex;
+  background-image: linear-gradient(to right, #000, #133357);
+  padding: 25px 15px;
+  color: white;
+  /* flex-wrap: wrap; */
+  justify-content: space-around;
+  font-size: 20px;
+  /* width: 100%; */
+}
+.footer p {
+  font-family: "Product Sans", Roboto;
+  padding: 5px 20px;
+}
+
+.footerTrip,
+.footerMain,
+.footerSub {
+  margin: 10px 0px;
+  width: 20%;
+}
+
+.footerDisc {
+  margin: 10px 0px;
+  width: 40%;
+}
+
+@media only screen and (max-width: 1280px) {
+}
+
+@media only screen and (max-width: 768px) {
+  .footerTrip,
+  .footerMain,
+  .footerSub {
+    width: 100%;
+  }
+
+  .footerDisc {
+    width: 100%;
+  }
+
+  .footer {
+    display: block;
+    font-size: 15   px;
+  }
+}

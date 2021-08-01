@@ -1,0 +1,89 @@
+.welcomeContent {
+  clear: both;
+  display: flex;
+  height: 70vh;
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+}
+
+.welcomeContentImg {
+  flex: 50%;
+  margin: auto;
+}
+.welcomeContentImg img {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: flex-end;
+}
+
+.welcomeContentText {
+  flex: 50%;
+  margin: auto;
+}
+
+.welcomeContent h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.welcomeContent p {
+  font-size: 20px;
+  color: rgb(44, 44, 44);
+  font-weight: 700;
+}
+
+.welcomeContent button {
+  background-image: linear-gradient(to right, #000, #133357);
+  color: white;
+  outline: none;
+  border: none;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 10px 30px;
+  border-radius: 3px;
+  margin: 10px 0px;
+}
+
+.welcomeContent button:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 1280px) {
+  .welcomeContent h1 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .welcomeContent {
+    width: 90%;
+    height: auto;
+    display: block;
+  }
+  .welcomeContentImg {
+    flex: 100%;
+    margin: 0px 10px;
+  }
+  .welcomeContentImg img {
+    width: 100%;
+  }
+  .welcomeContentText {
+    flex: 100%;
+    margin: 20px 0px;
+    text-align: center;
+  }
+
+  .welcomeContent h1 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .welcomeContent p {
+    font-size: 20px;
+    font-weight: 500;
+  }
+}

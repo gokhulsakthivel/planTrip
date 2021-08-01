@@ -1,0 +1,24 @@
+.featuredDestination {
+  /* width: 85%; */
+  margin: 0px 0px 40px 7.5%;
+}
+
+.featuredDestinationHeading h1 {
+  color: #133357;
+  font-family: "Roboto slab";
+  font-size: 25px;
+  padding: 10px 0px;
+}
+
+.FeaturedDestinationCards {
+  padding: 10px 0px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.FeaturedDestinationCards::-webkit-scrollbar {
+  display: none;
+}

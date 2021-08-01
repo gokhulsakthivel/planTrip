@@ -1,0 +1,28 @@
+.FDCard {
+  margin: 0px 20px 0px 0px;
+}
+
+.FDCardImg {
+  padding: 100px;
+  border-radius: 10px 10px 10px 0px;
+  margin-bottom: 10px;
+}
+
+.FDCard p {
+  margin: 10px 0xp;
+  padding: 10px 0xp;
+  font-family: "Product Sans", Roboto;
+  color: rgb(92, 92, 92);
+}
+
+@media only screen and (max-width: 1280px) {
+  .FDCardImg {
+    padding: 90px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .FDCardImg {
+    padding: 80px;
+  }
+}
