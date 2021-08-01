@@ -1,5 +1,12 @@
 .FDCard {
   margin: 0px 20px 0px 0px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.FDCard:hover {
+  transform: scale(1.05);
+  /* box-shadow: 4px 2px 20px 1px rgba(0, 0, 0, 0.1); */
 }
 
 .FDCardImg {

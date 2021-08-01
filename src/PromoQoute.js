@@ -25,11 +25,13 @@ export default class PromoQoute extends Component {
       this.setState({
         error: temp,
       });
+      document.getElementById("name").value = getName;
     } else {
       temp.name = false;
       this.setState({
         error: temp,
       });
+      document.getElementById("name").value = "";
     }
 
     // Contact
@@ -38,14 +40,13 @@ export default class PromoQoute extends Component {
       this.setState({
         error: temp,
       });
+      document.getElementById("contact").value = getContact;
     } else {
       temp.contactNo = false;
-      temp.name = false;
-      temp.contactNo = false;
-      temp.email = false;
       this.setState({
         error: temp,
       });
+      document.getElementById("contact").value = "";
     }
 
     // email
@@ -54,11 +55,13 @@ export default class PromoQoute extends Component {
       this.setState({
         error: temp,
       });
+      document.getElementById("email").value = getEmail;
     } else {
       temp.email = false;
       this.setState({
         error: temp,
       });
+      document.getElementById("email").value = "";
     }
 
     if (
@@ -70,6 +73,9 @@ export default class PromoQoute extends Component {
       this.setState({
         error: temp,
       });
+      document.getElementById("name").value = "";
+      document.getElementById("contact").value = "";
+      document.getElementById("email").value = "";
     } else {
       temp.pass = false;
       this.setState({
@@ -77,16 +83,13 @@ export default class PromoQoute extends Component {
       });
     }
 
-    document.getElementById("name").value = "";
-    document.getElementById("contact").value = "";
-    document.getElementById("email").value = "";
-
-    console.log(this.state);
+    // console.log(this.state);
   };
 
   render() {
     const promoStyle = {
       backgroundSize: "cover",
+      backgroundAttachment: "fixed",
       backgroundImage: `url(${promoImage})`,
     };
 

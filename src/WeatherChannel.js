@@ -5,6 +5,7 @@ import iconPartySunny from "./assets/icon-party-sunny.svg";
 export default class WeatherChannel extends Component {
   state = {
     loading: true,
+    temperature: "Celcius",
   };
 
   async componentDidMount() {
@@ -18,6 +19,18 @@ export default class WeatherChannel extends Component {
     });
   }
 
+  changeTemperature = () => {
+    if (this.state.temperature === "Celcius") {
+      this.setState({
+        temperature: "Fahrenheit",
+      });
+    } else if (this.state.temperature === "Fahrenheit") {
+      this.setState({
+        temperature: "Celcius",
+      });
+    }
+  };
+
   render() {
     if (!this.state.loading) {
       var WeatherChannelComponent = this.state.data.map(
@@ -29,7 +42,12 @@ export default class WeatherChannel extends Component {
           >
             <p>{datum.city}</p>
             <img src={iconPartySunny} alt="Partly Sunny"></img>
-            <h1>{datum.temp_Celsius}&deg;</h1>
+            <h1 id="degreeValue">
+              {this.state.temperature === "Celcius"
+                ? datum.temp_Celsius
+                : datum.temp_Fahr}
+              &deg;
+            </h1>
           </div>
         )
         // console.log(datum)
@@ -41,6 +59,9 @@ export default class WeatherChannel extends Component {
       <div className="weatherChannel" id="wch">
         <div className="weatherChannelHeading">
           <h1>THE WEATHER CHANNEL</h1>
+          <h1 className="button" onClick={this.changeTemperature}>
+            {this.state.temperature}
+          </h1>
         </div>
         <div className="weatherChannelResults">{WeatherChannelComponent}</div>
       </div>
