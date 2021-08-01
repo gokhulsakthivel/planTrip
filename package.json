@@ -1,7 +1,7 @@
 {
   "name": "sirius",
   "version": "0.1.0",
-  "homepage": "https://gokhulsakthivel.github.io/planTrip/src/",
+  "homepage": "https://gokhulsakthivel.github.io/planTrip/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
