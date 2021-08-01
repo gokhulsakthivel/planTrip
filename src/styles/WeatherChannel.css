@@ -23,6 +23,30 @@
   text-align: center;
   padding: 20px 0px;
 }
+<<<<<<< Updated upstream
+=======
+.button {
+  background-color: white;
+  padding: 0px 10px;
+  color: #133357;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.button::after {
+  content: "";
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: black;
+  transition: 300ms;
+  margin-bottom: 1px;
+}
+
+.button:hover::after {
+  width: 100%;
+}
+>>>>>>> Stashed changes
 
 #Canberra {
   background-color: #0d7e88;

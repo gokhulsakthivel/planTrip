@@ -86,10 +86,22 @@
   border-radius: 3px;
   margin: 10px 35%;
   text-align: center;
+  display: inline-block;
 }
 
-.qouteSubmit:hover {
-  text-decoration: underline;
+.qouteSubmit::after {
+  content: "";
+  width: 0px;
+  height: 1px;
+  margin: auto;
+  display: block;
+  background: white;
+  transition: 300ms;
+}
+
+.qouteSubmit:hover::after {
+  width: 50%;
+  margin: auto;
 }
 
 @media only screen and (max-width: 1280px) {
