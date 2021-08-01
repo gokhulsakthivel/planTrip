@@ -39,15 +39,9 @@ export default class Navbar extends Component {
     return (
       <div className="navBarWrap">
         <div className="navBar">
-          <a href="#wch" id="weather">
-            WEATHER
-          </a>
-          <a href="#fd" id="destination">
-            DESTINATIONS
-          </a>
-          <a href="#pq" id="getAQoute">
-            GET A QUOTE
-          </a>
+          <a id="weather">WEATHER</a>
+          <a id="destination">DESTINATIONS</a>
+          <a id="getAQoute">GET A QUOTE</a>
         </div>
       </div>
     );
