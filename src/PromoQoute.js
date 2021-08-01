@@ -40,6 +40,9 @@ export default class PromoQoute extends Component {
       });
     } else {
       temp.contactNo = false;
+      temp.name = false;
+      temp.contactNo = false;
+      temp.email = false;
       this.setState({
         error: temp,
       });
