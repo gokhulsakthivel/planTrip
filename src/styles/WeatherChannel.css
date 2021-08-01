@@ -23,8 +23,6 @@
   text-align: center;
   padding: 20px 0px;
 }
-<<<<<<< Updated upstream
-=======
 .button {
   background-color: white;
   padding: 0px 10px;
@@ -46,7 +44,6 @@
 .button:hover::after {
   width: 100%;
 }
->>>>>>> Stashed changes
 
 #Canberra {
   background-color: #0d7e88;
