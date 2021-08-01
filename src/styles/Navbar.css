@@ -13,17 +13,28 @@
   padding: 22px 0px;
   float: right;
 }
+
 .navBar a {
   text-decoration: none;
   color: #000;
   font-weight: 450;
   font-size: 18px;
   transition: all 500ms;
+  display: inline-block;
+  cursor: pointer;
 }
-.navBar a:hover {
-  /* color: white; */
-  text-decoration: underline;
-  /* background-image: linear-gradient(to right,#000 , #133357); */
+
+.navBar a::after {
+  content: "";
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: black;
+  transition: 300ms;
+}
+
+.navBar a:hover::after {
+  width: 100%;
 }
 
 @media only screen and (max-width: 1280px) {

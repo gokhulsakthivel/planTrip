@@ -44,11 +44,21 @@
   padding: 10px 30px;
   border-radius: 3px;
   margin: 10px 0px;
+  display: inline-block;
+  cursor: pointer;
 }
 
-.welcomeContent button:hover {
-  cursor: pointer;
-  text-decoration: underline;
+.welcomeContent button::after {
+  content: "";
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: white;
+  transition: 300ms;
+}
+
+.welcomeContent button:hover::after {
+  width: 100%;
 }
 
 @media only screen and (max-width: 1280px) {
